@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+
+
+    <style>
+        body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    </style>
+
+<h1>
+   formulario
+</h1>
+<button><img src="SAVE.png" height="70px" width="70px" alt="ícone"> <br>SALVAR</button>
+<form autocomplete="on" method="post">
+<div>
+
+<input type="text" placeholder="Digite ou Selecione" name="lista" id="lista99" list="lista888">
+<label for="lista99"></label>
+<datalist id="lista888">
+<option>biomedico</option>
+<option>biologo</option>
+<option>farmaceutico</option>
+<option>caminhoneiro</option>
+</datalist>
+<br><br>
+
+<textarea name="mensagemGrande" id="msg" cols="20" rows="10" placeholder="Digite seu texto"></textarea>
+
+
+<fieldset>
+<legend>AUTO SOMA</legend>
+<input type="number" name="num1" id="idnum1" placeholder="Número 1" oninput="isoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+<input type="number" name="num2" id="idnum2" placeholder="Número 2" oninput="isoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+<output name="soma" id="isoma">0</output>
+</fieldset>
+
+<fieldset>
+  <legend>Da pra colocar essa linha usando o fieldsete</legend>
+<input type="checkbox" name="check1" id="opc1" value="opcao1"> <label for="opc1">Opção 1</label><br>
+<input type="checkbox" name="check2" id="opc2" value="opcao2"> <label for="opc2">Opção 2</label><br>
+<input type="checkbox" name="check3" id="opc3" value="opcao3"> <label for="opc3">Opção 3</label><br><br>
+</fieldset>
+
+<fieldset>
+ <legend>Motilidade 0-100%:</legend>
+<input type="range" name="range1" id="range99" min="0" max="100" value="0" oninput="ival.innerHTML = Number(range99.value)">
+<output id="ival">0</output>>
+
+<br><br>
+</fieldset>
+
+
+<input type="number" size="500px" name="numero" placeholder="Nº separados por . ou ,"><br><br>
+
+<input type="radio" name="radio1" id="radio11" value="opcao1"> <label for="radio11">Opção 1</label><br>
+<input type="radio" name="radio1" id="radio22" value="opcao2"> <label for="radio22">Opção 2</label><br>
+<input type="radio" name="radio1" id="radio33" value="opcao3"> <label for="radio33">Opção 3</label><br>
+<input type="radio" name="radio1" id="radio44" value="opcao4"> <label for="radio44">Opção 4</label><br><br>
+
+<input type="button" value="Botão de ação"><br><br>
+
+<input type="time" name="hora" placeholder="Hora"><br><br>
+
+<input type="datetime-local" name="dataHora" placeholder="Data e Hora"><br><br>
+
+<input type="month" name="mesAno" placeholder="Mês e Ano"><br><br>
+
+<select id="cidade" name="cidade">
+    <option value="">---Selecione uma Opção---</option>
+    <option value="sao_paulo">São Paulo</option>
+    <option value="rio_de_janeiro">Rio de Janeiro</option>
+    <option value="belo_horizonte">Belo Horizonte</option>
+    <option value="curitiba">Curitiba</option>
+  </select>
+  <br><br>
+
+
+  <select id="frutas" name="frutas">
+    <optgroup label="Frutas Tropicais">
+      <option value="manga">Manga</option>
+      <option value="abacaxi">Abacaxi</option>
+    </optgroup>
+
+    <optgroup label="Frutas Cítricas">
+      <option value="laranja">Laranja</option>
+      <option value="limao">Limão</option>
+    </optgroup>
+  </select>
+  <br><br>
+<input type="file" name="foto" id="foto">
+
+<input type="submit" value="Enviar"><br><br>
+<input type="reset" value="Limpar"><br><br>
+
+</div>
+</form>
+
+
+
+</body>
+</html>
